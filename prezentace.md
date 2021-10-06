@@ -522,9 +522,9 @@ class: excer
 
 Když můj lokální klon repozitáře i server mají novou změnu, která mění stejnou řádku, nastává konflikt
 
-Situace: já i Max jsme každý ve svém klonu repozitáře změnili stejnou řádku ve stejném souboru (každý trochu jinak) a udělali commit.
+Situace: já i Tomas jsme každý ve svém klonu repozitáře změnili stejnou řádku ve stejném souboru (každý trochu jinak) a udělali commit.
 
-Problém: když Max pushne svou změnu na GitHub a já si ji zkusím stáhnout, nastane konflikt, protože Git neví, jak má Maxovu změnu napasovat na mojí.
+Problém: když Tomas pushne svou změnu na GitHub a já si ji zkusím stáhnout, nastane konflikt, protože Git neví, jak má Tomasovu změnu napasovat na mojí.
 
 ---
 class: noconsole
@@ -539,7 +539,7 @@ Git mi do souboru, ve kterém nastal merge konflikt, uloží obě varianty a je 
 
 ```
 <<<<<<< HEAD
-Tohle je řádka, kterou jsem změnil já, Max.
+Tohle je řádka, kterou jsem změnil já, Tomas.
 =======
 Tohle je řádka, kterou jsme změnil já, Petr.
 >>>>>>> main
@@ -547,11 +547,11 @@ Tohle je řádka, kterou jsme změnil já, Petr.
 
 --
 
-Jak konflikt vyřeším je na mně. Mohu zahodit svou změnu, Maxovu změnu, nebo můžu celou řádku přepsat
+Jak konflikt vyřeším je na mně. Mohu zahodit svou změnu, Tomasovu změnu, nebo můžu celou řádku přepsat
 tak, aby nějakým způsobem zůstaly zachovány obě změny, třeba takto:
 
 ```
-Tohle je řádka, kterou jsme změnili my, Max a Petr.
+Tohle je řádka, kterou jsme změnili my, Tomas a Petr.
 ```
 
 ---
